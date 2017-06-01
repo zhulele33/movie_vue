@@ -1,0 +1,141 @@
+$mainColor: #ff5c5c;
+$linkColor: #06c #333 !default;//第一个值为默认值，第二个鼠标滑过值
+$rootFontSize:40;
+.movie_item{
+	border-bottom:1px solid #ddd;
+}
+.movie_item_link{
+	padding:0.5rem;
+    display:block;
+    text-decoration: none;
+    position: relative;
+    &:active{
+    	background-color:#dcdcdc;
+    }
+    .movie-item-img{
+    	width:140rem/$rootFontSize;
+    	height:190rem/$rootFontSize;
+    	img{
+    		width:100%;
+    		height:100%;
+    	}
+    }
+    .movie_item_info {
+    	width:380rem/$rootFontSize;
+    	margin-left:20rem/$rootFontSize;
+    	margin-right:30rem/$rootFontSize;
+    	.movie_item_title{
+    		color:#333;
+    		margin-top:4rem/$rootFontSize;
+    		line-height:52rem/$rootFontSize;
+    	}
+    	.movie_item_summary{
+    		color:#999;
+    		line-height:46rem/$rootFontSize;
+    	}
+    	.movie_item_actor{
+    		color:#666;
+    		line-height:51rem/$rootFontSize;
+    		margin-top:3rem/$rootFontSize;
+    	}
+    	.movie_item_type{
+    		color:#666;
+    		line-height:36rem/$rootFontSize;
+    	}
+    }
+    .movie_item_btn{
+    	width: 140rem/$rootFontSize;
+	    height: 60rem/$rootFontSize;
+	    text-align: center;
+	    position: absolute;
+	    bottom: 20rem/$rootFontSize;
+	    right: 20rem/$rootFontSize;
+	    line-height: 56rem/$rootFontSize;
+	    border: 2px solid $mainColor;
+	    color: $mainColor;
+	    -webkit-border-radius:6rem/$rootFontSize;
+	    border-radius:6rem/$rootFontSize;
+	    &:active{
+	    	background-color:$mainColor;
+	    	color: #fff;
+	    }
+    }
+    .movie_item_label{
+	    position: absolute;
+	    top: 20rem/$rootFontSize;
+	    right: 20rem/$rootFontSize;
+	    line-height:40rem/$rootFontSize;
+	    font-size: 0;
+	    span{
+	    	border-radius:5rem/$rootFontSize;
+	    	padding:0 4rem/$rootFontSize;
+	    	margin-left:10rem/$rootFontSize;
+	    }
+	    .imax{
+	    	color:#129dfc;
+	    	border:1px solid #129dfc;
+	    }
+	    .fourD{
+	    	color:#38b245;
+	    	border:1px solid #38b245;
+	    }
+	    .threeD{
+	    	color:$mainColor;
+	    	border:1px solid $mainColor;
+	    }
+	    .twoD{
+	    	color:#f5b247;
+	    	border:1px solid #f5b247;
+	    }
+    }
+}
+
+
+[data-dpr="1"] {
+	.movie_item_link{
+		font-size:12px;
+		.movie_item_title{
+			font-size:15px;
+		}
+		.movie_item_btn{
+			font-size:16px;
+		}
+		.movie_item_label{
+			span{
+				font-size:12px;
+			}
+		}
+	}
+}
+[data-dpr="2"] {
+	.movie_item_link{
+		font-size:24px;
+		.movie_item_title{
+			font-size:30px;
+		}
+		.movie_item_btn{
+			font-size:32px;
+		}
+		.movie_item_label{
+			span{
+				font-size:24px;
+			}
+		}
+	}
+}
+[data-dpr="3"]{
+	.movie_item_link{
+		font-size:36px;
+		.movie_item_title{
+			font-size:45px;
+		}
+		.movie_item_btn{
+			font-size:48px;
+		}
+		.movie_item_label{
+			span{
+				font-size:36px;
+			}
+		}
+	}
+}

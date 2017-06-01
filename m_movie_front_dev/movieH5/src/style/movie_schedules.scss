@@ -1,0 +1,194 @@
+$mainColor: #ff5c5c;
+$linkColor: #06c #333 !default;//第一个值为默认值，第二个鼠标滑过值
+$rootFontSize:40;
+.movie_schedules{
+	margin-top:60rem/$rootFontSize;
+	.row{
+		width:100%;
+		border-bottom:1px solid #ddd;
+		padding:14rem/$rootFontSize 0;
+		text-align:center;
+		.m_time{
+			width:120rem/$rootFontSize;
+			padding-left:30rem/$rootFontSize;
+			text-align:left;
+			margin-top: 5rem/$rootFontSize;
+			strong{
+				line-height:40rem/$rootFontSize;
+			}
+			.ending{
+				color:#999;
+				line-height:32rem/$rootFontSize;
+			}
+		}
+		.m_info{
+			width:180rem/$rootFontSize;
+			.info_type{
+				line-height:28rem/$rootFontSize;
+
+			}
+			.m_room,.tickets_left{
+				color:#999;
+				line-height:28rem/$rootFontSize;
+			}
+		}
+		.m_gomeActive{
+			width:100rem/$rootFontSize;
+			min-height:1px;
+			.jiang{
+				display:inline-block;
+				width:30rem/$rootFontSize;
+				height:30rem/$rootFontSize;
+				text-align:center;
+				border:1px solid #009800;
+				-webkit-border-radius:2rem/$rootFontSize;
+				border-radius:2rem/$rootFontSize;
+				color:#009800;
+				margin-top:28rem/$rootFontSize;
+			}
+		}
+		.m_pri{
+			width:100rem/$rootFontSize;
+			.discount_pri{
+				line-height:40rem/$rootFontSize;
+				margin-top: 6rem/$rootFontSize;
+				color: $mainColor;
+			}
+			del{
+				line-height:32rem/$rootFontSize;
+				color:#999;
+			}
+		}
+		.m_buy{
+			width:220rem/$rootFontSize;
+			a{
+				display:inline-block;
+				width:160rem/$rootFontSize;
+				height:60rem/$rootFontSize;
+				line-height:60rem/$rootFontSize;
+				margin:11rem/$rootFontSize auto 0;
+				border:1px solid $mainColor;
+				-webkit-border-radius:4rem/$rootFontSize;
+				border-radius:4rem/$rootFontSize;
+				color:$mainColor;
+			}
+		}
+	}
+}
+.movie_dates{
+	border-bottom:1px solid #ddd;
+	height:60rem/$rootFontSize;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	.movie_date_item{
+		padding: 0 0.5rem;
+	    text-align: center;
+	    width: 3rem;
+	    a{
+			line-height: 60rem/$rootFontSize;
+	    	display: inline-block;
+			width: 100%;
+			height:60rem/$rootFontSize;
+			color: #666;
+	    }
+	}
+
+	.active{
+		a{
+			border-bottom: 2px solid $mainColor;
+			color:$mainColor;
+			-webkit-box-sizing:border-box;
+			box-sizing:border-box;
+		}
+	}
+}
+[data-dpr="1"] {
+	.movie_schedules{
+		.m_time{
+			font-size:18px;
+			.ending{
+				font-size:11px;
+			}
+		}
+		.m_info{
+			.m_room,.tickets_left{
+				font-size:12px;
+			}
+		}
+		.m_gomeActive{
+			.jiang{
+				font-size:12px;
+			}
+		}
+		.m_pri{
+			font-size:13px;
+			em,del{
+				font-size:11px;
+			}
+			
+		}
+	}
+	.movie_dates{
+		font-size: 12px;
+	}
+}
+[data-dpr="2"] {
+	.movie_schedules{
+		.m_time{
+			font-size:36px;
+			.ending{
+				font-size:22px;
+			}
+		}
+		.m_info{
+			.m_room,.tickets_left{
+				font-size:24px;
+			}
+		}
+		.m_gomeActive{
+			.jiang{
+				font-size:24px;
+			}
+		}
+		.m_pri{
+			font-size:26px;
+			em,del{
+				font-size:22px;
+			}
+			
+		}
+	}
+	.movie_dates{
+		font-size: 24px;
+	}
+}
+[data-dpr="3"] {
+	.movie_schedules{
+		.m_time{
+			font-size:54px;
+			.ending{
+				font-size:33px;
+			}
+		}
+		.m_info{
+			.m_room,.tickets_left{
+				font-size:36px;
+			}
+		}
+		.m_gomeActive{
+			.jiang{
+				font-size:36px;
+			}
+		}
+		.m_pri{
+			font-size:39px;
+			em,del{
+				font-size:33px;
+			}
+			
+		}
+	}
+	.movie_dates{
+		font-size: 36px;
+	}
+}

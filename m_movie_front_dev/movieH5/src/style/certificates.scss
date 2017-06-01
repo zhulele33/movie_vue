@@ -1,0 +1,75 @@
+$mainColor: #ff5c5c;
+$linkColor: #06c #333 !default;//第一个值为默认值，第二个鼠标滑过值
+$rootFontSize:40;
+.exchange_quan{
+	margin-top:20rem/$rootFontSize;
+	background-color:#fff;
+	padding:20rem/$rootFontSize 30rem/$rootFontSize;
+    line-height: 46rem/$rootFontSize;
+    .quan{
+    	display:inline-block;
+    	width:30rem/$rootFontSize;
+    	height:30rem/$rootFontSize;
+    	font-size:24rem/$rootFontSize;
+    	border:1px solid $mainColor;
+    	color:$mainColor;
+    	text-align:center;
+    	line-height:30rem/$rootFontSize;
+    	-webkit-border-radius:2rem/$rootFontSize;
+    	border-radius:2rem/$rootFontSize;
+    	margin-right:20rem/$rootFontSize;
+    }
+    .quan_price{
+    	.price{
+    		color:$mainColor;
+    		i{
+    			font-style:normal;
+    			color:#666;
+    		}
+    	}
+    	.quan_btn{
+    		display: inline-block;
+		    width: 110rem/$rootFontSize;
+		    height: 50rem/$rootFontSize;
+		    text-align: center;
+		    border: 1px solid $mainColor;
+		    -webkit-box-sizing:border-box;
+		    box-sizing:border-box;
+		    color: $mainColor;
+		    -webkit-border-radius: 4rem/$rootFontSize;
+		    border-radius: 4rem/$rootFontSize;
+		    line-height: 50rem/$rootFontSize;
+		    margin-left:40rem/$rootFontSize;
+    	}
+    }
+}
+[data-dpr="1"] {
+    .exchange_quan{
+        .price{
+            font-size:15px;
+            em,i{
+                font-size:12px;
+            }
+        }
+    }
+}
+[data-dpr="2"] {
+    .exchange_quan{
+        .price{
+            font-size:30px;
+            em,i{
+                font-size:24px;
+            }
+        }
+    }
+}
+[data-dpr="3"] {
+    .exchange_quan{
+        .price{
+            font-size:45px;
+            em,i{
+                font-size:36px;
+            }
+        }
+    }
+}

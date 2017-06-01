@@ -1,0 +1,193 @@
+$mainColor: #ff5c5c;
+$linkColor: #06c #333 !default;//第一个值为默认值，第二个鼠标滑过值
+$rootFontSize:40;
+.order_block{
+	margin-bottom:0.5rem;
+	padding:0 0.75rem;
+	background-color:#fff;
+	overflow: hidden;
+}
+.film_base{
+	padding:0.5rem 0.75rem 0.375rem;
+	color:#666;
+	line-height:1.25rem;
+	.film_name{
+		line-height:53rem/$rootFontSize;
+		height:53rem/$rootFontSize;
+		color:#333;
+	}
+}
+.film_status{
+	padding:0.375rem 0.75rem;
+	line-height:58rem/$rootFontSize;
+	.film_statu_label{
+		float:left;
+		width:160rem/$rootFontSize;
+		text-align:left;
+		color:#666;
+	}
+	.film_statu_value{
+		width:530rem/$rootFontSize;
+	}
+}
+.film_price{
+	padding:0;
+	.film_balance{
+		height:96rem/$rootFontSize;
+		line-height:96rem/$rootFontSize;
+		border-bottom:1px solid #ddd;
+		padding:0 0.75rem;
+		.film_price_label{
+			color:#666;
+		}
+		.film_price_val{
+			text-align:right;
+			overflow:hidden;
+			height:100%;
+			.total_price{
+				padding-top:15rem/$rootFontSize;
+				line-height:36rem/$rootFontSize;
+				height:36rem/$rootFontSize;
+				overflow:hidden;
+				color:$mainColor;
+			}
+			.total_price_detail{
+				padding-bottom:12rem/$rootFontSize;
+				line-height:36rem/$rootFontSize;
+				height:36rem/$rootFontSize;
+				overflow:hidden;
+				color:#999;
+			}
+		}
+	}
+}
+.pay_price{
+	height:96rem/$rootFontSize;
+	line-height:96rem/$rootFontSize;
+	margin-bottom:0;
+}
+.tips{
+	height:68rem/$rootFontSize;
+	line-height:68rem/$rootFontSize;
+	color:#999;
+	text-align:center;
+}
+.operate_sub{
+	background-color:$mainColor;
+	a{
+		display:block;
+		height:100%;
+		line-height:2.45rem;
+		color:#fff;
+		text-align:center;
+	}
+}
+
+[data-dpr="1"]{
+	.film_base{
+		font-size:15px;
+		.film_name{
+			font-size:16px
+		}
+	}
+	.film_status{
+		font-size:15px;
+	}
+	.film_price{
+		.film_balance{
+			.film_price_label{
+				font-size:15px;
+			}
+			.film_price_val{
+				.total_price{
+					font-size:15px;
+				}
+				.total_price_detail,i{
+					font-size:11px;
+				}
+			}
+		}
+	}
+	.pay_price i{
+		font-size:11px;
+	}
+	.tips{
+		font-size:13px;
+	}
+	.operate_sub a{
+		font-size:18px;
+	}
+}
+
+
+[data-dpr="2"]{
+	.film_base{
+		font-size:30px;
+		.film_name{
+			font-size:32px
+		}
+	}
+	.film_status{
+		font-size:30px;
+	}
+	.film_price{
+		.film_balance{
+			.film_price_label{
+				font-size:30px;
+			}
+			.film_price_val{
+				.total_price{
+					font-size:30px;
+				}
+				.total_price_detail,i{
+					font-size:22px;
+				}
+			}
+		}
+	}
+	.pay_price i{
+		font-size:22px;
+	}
+	.tips{
+		font-size:26px;
+	}
+	.operate_sub a{
+		font-size:36px;
+	}
+}
+
+[data-dpr="3"]{
+	.film_base{
+		font-size:45px;
+		.film_name{
+			font-size:48px
+		}
+	}
+	.film_status{
+		font-size:45px;
+	}
+	.film_price{
+		.film_balance{
+			.film_price_label{
+				font-size:45px;
+			}
+			.film_price_val{
+				.total_price{
+					font-size:45px;
+				}
+				.total_price_detail,i{
+					font-size:33px;
+				}
+			}
+		}
+	}
+	.pay_price i{
+		font-size:33px;
+	}
+	.tips{
+		font-size:39px;
+	}
+	.operate_sub a{
+		font-size:54px;
+	}
+}

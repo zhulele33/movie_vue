@@ -1,0 +1,89 @@
+$mainColor: #ff5c5c;
+$linkColor: #06c #333 !default;//第一个值为默认值，第二个鼠标滑过值
+$rootFontSize:40;
+.cinema_title{
+	background-color:#fff;
+	padding:10rem/$rootFontSize 30rem/$rootFontSize;
+	.cinema_icon{
+		width:100rem/$rootFontSize;
+		height:100rem/$rootFontSize;
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box;
+		border:1px solid #ddd;
+		line-height: 2.5rem;
+	    vertical-align: middle;
+	    margin-right:20rem/$rootFontSize;
+		img{
+			width:100%;
+		}
+	}
+	.cinema_name{
+		line-height:100rem/$rootFontSize;
+		color:#333;
+	}
+}
+.cinema_detail{
+	background-color:#fff;
+	.cinema_address{
+		padding:14rem/$rootFontSize 30rem/$rootFontSize;
+		border-bottom:1px solid #ddd;
+		margin-top:20rem/$rootFontSize;
+		.icon-address{
+			margin-top:6rem/$rootFontSize;
+		    margin-right: 0.5rem;
+		    font-size: 0.75rem;
+		    width: 0.75rem;
+		    height: 0.75rem;
+		    color:#999;
+			&:before{
+				content:"\e902";
+			}
+		}
+		p{
+			width:640rem/$rootFontSize;
+			line-height:40rem/$rootFontSize;
+			color:#666;
+		}
+	}
+	.cinema_tel{
+	    padding: 0.35rem 0.75rem;
+		line-height:52rem/$rootFontSize;
+		color:#666;
+		.icon-tel{
+			margin-top:8rem/$rootFontSize;
+		    margin-right: 0.5rem;
+		    font-size: 0.75rem;
+		    width: 0.75rem;
+		    height: 0.75rem;
+		    color:#999;
+			&:before{
+				content:"\e903";
+			}
+		}
+	}
+}
+
+
+[data-dpr="1"] {
+	.cinema_title{
+		.cinema_name{
+			font-size:16px;
+		}
+	}
+}
+[data-dpr="2"] {
+	.cinema_title{
+		.cinema_name{
+			font-size:32px;
+		}
+	}
+
+}
+[data-dpr="3"] {
+	.cinema_title{
+		.cinema_name{
+			font-size:48px;
+		}
+	}
+	
+}

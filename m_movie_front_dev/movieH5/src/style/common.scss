@@ -1,0 +1,83 @@
+$mainColor: #ff5c5c;
+$linkColor: #06c #333 !default;//第一个值为默认值，第二个鼠标滑过值
+$rootFontSize:40;
+body,html{
+	height:100%;
+	overflow:hidden;
+}
+body{
+    font-family: Arial, "SimHei";
+    width: 18.75rem;
+    -webkit-text-size-adjust: none;
+    color:#333;
+}
+a{
+  color:nth($linkColor,1);
+
+  &:hover{
+    color:nth($linkColor,2);
+  }
+}
+i{
+	font-style:normal;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.container{
+	position: absolute;
+	top:2.2rem;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:0;
+	background-color:#eee;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.ellipsis{
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.clamp_ellipsis_2{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.clamp_ellipsis_4{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
+.mainColor{
+	color:$mainColor;
+}
+.loadingTips{
+	text-align:center;
+	height:2.2rem;
+	line-height:2.2rem;
+	color:#999;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  left: 0;
+  right: 0;
+  height: 2.45rem;
+}
+.hide{
+  display: none;
+}

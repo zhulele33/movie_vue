@@ -1,0 +1,198 @@
+$mainColor: #ff5c5c;
+$linkColor: #06c #333 !default;//第一个值为默认值，第二个鼠标滑过值
+$rootFontSize:40;
+.movie_info{
+    padding: 0.5rem 0.5rem 0.25rem;
+    background-color: #fff;
+    margin-bottom:0.5rem;
+    .movie_name{
+	    line-height: 60rem/$rootFontSize;
+    }
+    .movie_addr,.show_time,.count{
+    	line-height: 46rem/$rootFontSize;
+	    color: #999;
+    }
+
+}
+.order_block{
+	padding:0 0.5rem;
+	background-color:#fff;
+	height:2.5rem;
+	line-height:2.5rem;
+	color:#505050;
+	border-bottom:1px solid #ddd;
+	overflow:hidden;
+	.icon-arrow-r{
+		&:before{
+			content:'\e907';
+		}
+	}
+	.quantity-block{
+		margin-top:0.75rem;
+	}
+	.block-des{
+		float:right;
+		color:#aaa;
+		.price{
+			display:block;
+			margin-top:0.5rem;
+			line-height:34rem/$rootFontSize;
+			color:$mainColor;
+			text-align:right;
+		}
+		.price_detail{
+			display:block;
+			line-height:42rem/$rootFontSize;
+			color:#999;
+		}
+		.quantity_oper{
+			width:1rem;
+			height:1rem;
+			float:left;
+			background-color:$mainColor;
+			color:#fff;
+			text-align:center;
+			line-height:0.9rem;
+			overflow:hidden;
+		}
+		.quantity_show{
+			float:left;
+			width:1.25rem;
+			height:1rem;
+			line-height:1rem;
+			text-align:center;
+		}
+	}
+	input{
+	    border: 1px solid #ddd;
+	    height: 1.5rem;
+	    line-height: 1.5rem;
+	    margin-top: 0.5rem;
+	    padding-left: 0.5rem;
+	    width: 8rem;
+	    -webkit-box-sizing:border-box;
+	    box-sizing:border-box;
+	}
+}
+.submitBtn{
+	border-top:1px solid #ddd;
+	line-height:2.45rem;
+	position: fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	.pay_count{
+		padding-left:35rem/$rootFontSize;
+		.discount{
+			color:$mainColor;
+		}
+	}
+	.sub_btn{
+		width:280rem/$rootFontSize;
+		height:2.45rem;
+		line-height:2.45rem;
+		color:#fff;
+		background-color:$mainColor;
+		text-align:center;
+		
+	}
+}
+[data-dpr="1"]{
+	.movie_info{
+		.movie_name{
+			font-size:17px;
+		}
+		.movie_addr,.show_time,.count{
+			font-size: 13px;
+		}
+	}
+	.order_block {
+		font-size:15px;
+		.block-des{
+			font-size:13px;
+			i,.price_detail{
+				font-size:11px;
+			}
+		}
+	}
+	.submitBtn{
+		.pay_count{
+			font-size:12px;
+			.discount{
+				font-size:18px;
+				i{
+					font-size:11px;
+				}
+			}
+		}
+		.sub_btn{
+			font-size:18px;
+		}
+	}
+}
+[data-dpr="2"]{
+	.movie_info{
+		.movie_name{
+			font-size:34px;
+		}
+		.movie_addr,.show_time,.count{
+			font-size: 26px;
+		}
+	}
+	.order_block{
+		font-size:30px;
+		.block-des{
+			font-size:26px;
+			i,.price_detail{
+				font-size:22px;
+			}
+		}
+	}
+	.submitBtn{
+		.pay_count{
+			font-size:24px;
+			.discount{
+				font-size:36px;
+				i{
+					font-size:22px;
+				}
+			}
+		}
+		.sub_btn{
+			font-size:36px;
+		}
+	}
+}
+[data-dpr="3"]{
+	.movie_info{
+		.movie_name{
+			font-size:51px;
+		}
+		.movie_addr,.show_time,.count{
+			font-size: 39px;
+		}
+	}
+	.order_block{
+		font-size:45px;
+		.block-des{
+			font-size:39px;
+			i,.price_detail{
+				font-size:33px;
+			}
+		}
+	}
+	.submitBtn{
+		.pay_count{
+			font-size:36px;
+			.discount{
+				font-size:54px;
+				i{
+					font-size:33px;
+				}
+			}
+		}
+		.sub_btn{
+			font-size:54px;
+		}
+	}
+}

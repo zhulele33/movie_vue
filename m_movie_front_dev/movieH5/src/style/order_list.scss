@@ -1,0 +1,123 @@
+$mainColor: #ff5c5c;
+$linkColor: #06c #333 !default;//第一个值为默认值，第二个鼠标滑过值
+$rootFontSize:40;
+
+.order_list{
+	.list_item{
+		margin-bottom:0.75rem;
+		padding:0 0.75rem;
+		background-color:#fff;
+		.states{
+			height:70rem/$rootFontSize;
+			line-height:70rem/$rootFontSize;
+			border-bottom:1px dashed #ddd;
+			.icon-film{
+				font-size:30rem/$rootFontSize;
+				font-style:normal;
+				color:$mainColor;
+				position: relative;
+			    top: 0.5rem;
+			    margin-right: 0.2rem;
+				&:before{
+				    content: "\e908";
+				}
+			}
+			.curr_state{
+				color:#666;
+			}
+		}
+		.film_info{
+			padding:9rem/$rootFontSize 0;
+			color:#a1a1a1;
+			line-height:50rem/$rootFontSize;
+			.film_name{
+				color:#333;
+				line-height:48rem/$rootFontSize;
+				height:48rem/$rootFontSize;
+			}
+			.film_price{
+				color:#666;
+				i{
+					font-style:normal;
+					font-size:24px
+				}
+			}
+
+		}
+		
+	}
+
+}
+[data-dpr="1"]{
+	.order_list{
+		.list_item{
+			.states{
+				.curr_state{
+					font-size:13px;
+				}
+			}
+			.film_info{
+				font-size:13px;
+				.film_name{
+					font-size:15px;
+				}
+				.film_price{
+					font-size:15px;
+					i{
+						font-size:12px
+					}
+				}
+			}
+		}
+
+	}
+}
+[data-dpr="2"]{
+	.order_list{
+		.list_item{
+			.states{
+				.curr_state{
+					font-size:26px;
+				}
+			}
+			.film_info{
+				font-size:26px;
+				.film_name{
+					font-size:30px;
+				}
+				.film_price{
+					font-size:30px;
+					i{
+						font-size:24px
+					}
+				}
+			}
+		}
+
+	}
+}
+
+[data-dpr="3"]{
+	.order_list{
+		.list_item{
+			.states{
+				.curr_state{
+					font-size:39px;
+				}
+			}
+			.film_info{
+				font-size:39px;
+				.film_name{
+					font-size:45px;
+				}
+				.film_price{
+					font-size:45px;
+					i{
+						font-size:36px
+					}
+				}
+			}
+		}
+
+	}
+}

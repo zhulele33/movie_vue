@@ -1,0 +1,128 @@
+$mainColor: #ff5c5c;
+$linkColor: #06c #333 !default;//第一个值为默认值，第二个鼠标滑过值
+$rootFontSize:40;
+
+.cinemas{
+	background-color:#fff;
+	.cinema_item{
+		padding:10rem/$rootFontSize 30rem/$rootFontSize;
+		border-bottom:1px solid #ddd;
+		.cinema_info{
+			width:560rem/$rootFontSize;
+			overflow:hidden;
+			.cinema_title{
+				height:48rem/$rootFontSize;
+				line-height:48rem/$rootFontSize;
+				color:#333;
+			}
+			.cinema_addr{
+				height:44rem/$rootFontSize;
+				line-height:44rem/$rootFontSize;
+				color:#999;
+			}
+			.cinema_label{
+				font-size:0;
+			    margin: 0.25rem 0;
+				span{
+					display:inline-block;
+					width:30rem/$rootFontSize;
+					height:30rem/$rootFontSize;
+					margin-right:20rem/$rootFontSize;
+					font-size:24rem/$rootFontSize;
+					-webkit-border-radius:2rem/$rootFontSize;
+					border-radius:2rem/$rootFontSize;
+					text-align:center;
+				}
+				.quan{
+					border:1px solid $mainColor;
+					color:$mainColor;
+				}
+				.zuo{
+					border:1px solid #2ebcca;
+					color:#2ebcca;
+				}
+				.jiang{
+					border:1px solid #00a306;
+					color:#00a306;
+				}
+			}
+		}
+		.cinema_price{
+		    width: 130rem/$rootFontSize;
+    		text-align: right;
+		    margin-top: 0.9rem;
+    		.distance{
+    			line-height:44rem/$rootFontSize;
+    			color:#bbb;
+    		}
+    		.price{
+    			line-height:62rem/$rootFontSize;
+    			color:$mainColor;
+    			i{
+    				font-style:normal;
+    				color:#666;
+    			}
+    		}
+		}
+	}
+}
+[data-dpr="1"] .cinemas{
+	.cinema_item{
+		.cinema_info{
+			.cinema_addr{
+				font-size:12px;
+			}
+		}
+		.cinema_price{
+			.distance{
+				font-size:12px;
+			}
+			.price{
+				font-size:15px;
+				em,i{
+					font-size:12px;
+				}
+			}
+		}
+	}	
+} 
+[data-dpr="2"] .cinemas{
+	.cinema_item{
+		.cinema_info{
+			.cinema_addr{
+				font-size:24px;
+			}
+		}
+		.cinema_price{
+			.distance{
+				font-size:24px;
+			}
+			.price{
+				font-size:30px;
+				em,i{
+					font-size:24px;
+				}
+			}
+		}
+	}	
+} 
+[data-dpr="3"] .cinemas{
+	.cinema_item{
+		.cinema_info{
+			.cinema_addr{
+				font-size:36px;
+			}
+		}
+		.cinema_price{
+			.distance{
+				font-size:36px;
+			}
+			.price{
+				font-size:45px;
+				em,i{
+					font-size:36px;
+				}
+			}
+		}
+	}	
+} 

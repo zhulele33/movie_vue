@@ -1,0 +1,124 @@
+$mainColor: #ff5c5c;
+$linkColor: #06c #333 !default;//第一个值为默认值，第二个鼠标滑过值
+$rootFontSize:40;
+.movies{
+	height:270rem/$rootFontSize;
+	position: relative;
+	.movies_box{
+		height:100%;
+		overflow:hidden;
+		.movie_bg{
+			background-color:rgba(0,0,0,0.6);
+			height:100%;
+			position: absolute;
+			top:0;
+			left:0;
+			right:0;
+			z-index:0;
+		}
+		.movie_list{
+			position: relative;
+			z-index:1;
+			width:1000rem;
+			padding-top:40rem/$rootFontSize;
+			transform: translateX(7.2125rem);
+			.animation{
+				width:140rem/$rootFontSize;
+				height:190rem/$rootFontSize;
+				margin-right:20rem/$rootFontSize;
+				float:left;
+				-webkit-transition: ease-in-out .2s;
+	    		transition: ease-in-out .2s;
+			    -webkit-transform: scale(1);
+	    		transform: scale(1);
+				.movie-poster{
+					width:100%;
+					height:100%;
+					img{
+						width:100%;
+						height:100%;
+					    display: block;
+					}
+				}
+			}
+			.active{
+				width:173rem/$rootFontSize;
+				height:236rem/$rootFontSize;
+				border:2px solid #fff;
+				 -webkit-transform: translateY(-23rem/$rootFontSize);
+				-webkit-box-sizing:border-box;
+				box-sizing:border-box;
+			}
+		}
+		.triangle{
+			width:0.5rem;
+			height:0.5rem;
+			transform:rotate(45deg) translateY(.325rem);
+			background-color:#fff;
+			position: absolute;
+			left:50%;
+			bottom:0;
+		}
+	}
+}
+.movie_infos{
+	background:#fff;
+	position: relative;
+	.movie_info_item{
+		display:none;
+		.movie_name{
+			height:80rem/$rootFontSize;
+			line-height:80rem/$rootFontSize;
+			text-align: center;
+			border-bottom:1px solid #ddd;
+			-webkit-box-sizing:border-box;
+			box-sizing:border-box;
+			.score{
+		    	color: $mainColor;
+    			margin-left: 0.5rem;
+			}
+		}
+	}
+	.curr{
+		display:block;
+	}
+	.movie_info_tips{
+		position: absolute;
+		top:140rem/$rootFontSize;
+		background-color:#fffde5;
+		color:#ff8000;
+		height:60rem/$rootFontSize;
+		line-height:60rem/$rootFontSize;
+		padding-left:30rem/$rootFontSize;
+		width:720rem/$rootFontSize;
+	}
+}
+[data-dpr="1"] {
+	.movie_infos {
+		.movie_name{
+			font-size:15px;
+			.score{
+				font-size: 11px;
+			}
+		}
+		
+	}
+}
+[data-dpr="2"] {
+	.movie_infos{
+		.movie_name{
+			font-size:30px;
+			.score{
+				font-size: 22px;
+			}
+		}
+	}}
+[data-dpr="3"] {
+	.movie_infos{
+		.movie_name{
+			font-size:45px;
+			.score{
+				font-size: 33px;
+			}
+		}
+	}}

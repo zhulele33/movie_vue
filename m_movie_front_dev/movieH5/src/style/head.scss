@@ -1,0 +1,55 @@
+$mainColor: #ff5c5c;
+.head{
+    width: 100%;
+    height: 2.2rem;
+    color: #fff;
+    .fixed{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+        height: 2.2rem;
+        line-height: 2.2rem;
+        text-align: center;
+        background-color: $mainColor;
+    }
+    .left{
+        position: absolute;
+        left:0;
+        padding:0 0.75rem;
+        color:#fff;
+        &:after{
+            content: "";
+            display: inline-block;
+            width: 0.5rem;
+            height: 0.5rem;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            border: 0.125rem solid #fff;
+            border-right: 0 none;
+            border-top: 0 none;
+        }
+    }
+    .right{
+        position: absolute;
+        right: 0;
+        padding:0 0.75rem;
+        color:#fff;
+    }
+}
+[data-dpr="1"] {
+    .head .fixed span{
+        font-size:18px;
+    }
+}
+[data-dpr="2"] {
+    .head .fixed span{
+        font-size:36px;
+    }
+}
+[data-dpr="3"] {
+    .head .fixed span{
+        font-size:54px;
+    }
+}
